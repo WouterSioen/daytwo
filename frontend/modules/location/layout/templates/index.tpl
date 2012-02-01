@@ -14,8 +14,9 @@
 
 	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 	<script type="text/javascript">
-		function initialize() {
-
+	
+		var initialize = function()
+		{
 			// create boundaries
 			var latlngBounds = new google.maps.LatLngBounds();
 
@@ -81,6 +82,6 @@
 			if('{$locationSettings.zoom_level}' == 'auto') map.fitBounds(latlngBounds);
 		}
 
-		google.maps.event.addDomListener(window, 'load', initialize)
+		google.maps.event.addDomListener(window, 'load', initialize);
 	</script>
 {/option:locationItems}
