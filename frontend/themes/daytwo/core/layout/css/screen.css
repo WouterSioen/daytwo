@@ -1051,16 +1051,7 @@ article.content h2	{
 		float: left;
 		padding: 0;
 	}
-	
-	/*.cutCorner p	{
-		width: 22px;
-		height: 28px;
-		background: url(../images/logo.png) no-repeat;
-		text-indent: -9999px;
-		float: left;
-		padding: 0;
-	}*/
-	
+
 	.ie6 #logo h1,
 		.ie6 #logo p {
 			background: url(../images/logo.jpg) no-repeat;
@@ -1124,6 +1115,7 @@ article.content h2	{
 	/* Main column */
 
 	#mainColumn	{
+		position: relative;
 		float: left;
 		width: 600px;
 	}
@@ -1167,6 +1159,18 @@ article.content h2	{
 		float: left;
 		overflow: hidden;
 		width: 100%;
+		z-index: 0;
+	}
+
+	.cutCorner p	{
+		width: 22px;
+		height: 25px;
+		background: url(../images/corner.jpg) no-repeat;
+		text-indent: -9999px;
+		position: absolute;
+		top: 0px;
+		right: -2px;
+		z-index: 1;
 	}
 
 	.ie6 #blog	{
