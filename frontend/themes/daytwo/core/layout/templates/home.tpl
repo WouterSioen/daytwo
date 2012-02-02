@@ -33,8 +33,8 @@
 							{$positionMain.blockContent}
 						{/option:!positionMain.blockIsHTML}
 					{/iteration:positionMain}
-					<div class="cutCorner"><p>cut of corner</p></div>
 				</div>
+				<div class="cutCorner"><p>cut of corner</p></div>
 			</div>
 
 			{* Right column *}
