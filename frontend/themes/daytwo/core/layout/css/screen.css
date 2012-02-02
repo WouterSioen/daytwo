@@ -1053,16 +1053,11 @@ a:hover.lightButton	{
 	#logo p {
 		width: 153px;
 		height: 142px;
-		background: url(../images/logo.png) no-repeat;
+		background: url(../images/logo.jpg) no-repeat;
 		text-indent: -9999px;
 		float: left;
 		padding: 0;
 	}
-
-	.ie6 #logo h1,
-		.ie6 #logo p {
-			background: url(../images/logo.jpg) no-repeat;
-		}
 
 		#logo h1 a,
 		#logo p a {
@@ -1152,12 +1147,12 @@ a:hover.lightButton	{
 
 	#blog	{
 		position: relative;
-		background-image: url(../images/lines.png), -moz-linear-gradient(top, #fbfbfb 0%, #f5f5f5 100%); /* FF3.6+ */
-		background-image: url(../images/lines.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fbfbfb), color-stop(100%,#f5f5f5)); /* Chrome,Safari4+ */
-		background-image: url(../images/lines.png), -webkit-linear-gradient(top, #fbfbfb 0%,#f5f5f5 100%); /* Chrome10+,Safari5.1+ */
-		background-image: url(../images/lines.png), -o-linear-gradient(top, #fbfbfb 0%,#f5f5f5 100%); /* Opera 11.10+ */
-		background-image: url(../images/lines.png), -ms-linear-gradient(top, #fbfbfb 0%,#f5f5f5 100%); /* IE10+ */
-		background-image: url(../images/lines.png), linear-gradient(top, #fbfbfb 0%,#f5f5f5 100%); /* W3C */
+		background-image: url(../images/lines.jpg), -moz-linear-gradient(top, #fbfbfb 0%, #f5f5f5 100%); /* FF3.6+ */
+		background-image: url(../images/lines.jpg), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fbfbfb), color-stop(100%,#f5f5f5)); /* Chrome,Safari4+ */
+		background-image: url(../images/lines.jpg), -webkit-linear-gradient(top, #fbfbfb 0%,#f5f5f5 100%); /* Chrome10+,Safari5.1+ */
+		background-image: url(../images/lines.jpg), -o-linear-gradient(top, #fbfbfb 0%,#f5f5f5 100%); /* Opera 11.10+ */
+		background-image: url(../images/lines.jpg), -ms-linear-gradient(top, #fbfbfb 0%,#f5f5f5 100%); /* IE10+ */
+		background-image: url(../images/lines.jpg), linear-gradient(top, #fbfbfb 0%,#f5f5f5 100%); /* W3C */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfbfb', endColorstr='#f5f5f5',GradientType=0 ); /* IE6-9 */
 		background-repeat: repeat-y;
 		background-position: 1px 1px;
@@ -1168,20 +1163,29 @@ a:hover.lightButton	{
 		width: 480px;
 	}
 
-	.cutCorner p	{
-		width: 22px;
-		height: 25px;
-		background: url(../images/corner.jpg) no-repeat;
-		text-indent: -9999px;
-		position: absolute;
-		top: 0px;
-		right: -2px;
-		z-index: 1;
+	.ie6 #blog	{
+		padding: 25px 0 20px 60px; /* padding fix IE6 */
+		width: 540px; /* wrong box model fix IE6 */
+	}
+	
+	.ie6 #blog, .ie7 #blog	{
+		background-image: url(../images/lines.jpg);
 	}
 
-	.ie6 #blog	{
-		padding-bottom: 30px;
-	}
+		.cutCorner p	{
+			width: 22px;
+			height: 25px;
+			background: url(../images/corner.jpg) no-repeat;
+			text-indent: -9999px;
+			position: absolute;
+			top: 0px;
+			right: -2px;
+			z-index: 1;
+		}
+
+		.ie6 .cutCorner p	{
+			right: 0px;
+		}
 
 	#blog a.img {
 		position: absolute;
@@ -1189,7 +1193,7 @@ a:hover.lightButton	{
 		left: 60px;
 		width: 17px;
 		height: 75px;
-		background: url(../images/blog.png) no-repeat;
+		background: url(../images/blog.jpg) no-repeat;
 		text-indent: -9999px;
 		}
 
