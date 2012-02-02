@@ -3,13 +3,14 @@
 	- {$tags}: contains an array with all tags that are used on the site, each element contains data about the tag
 *}
 
-<article class="article content clearfix">
+<article class="article clearfix">
+	<h2>Tags</h2>
 	{option:!tags}<p>{$msgTagsNoItems}</p>{/option:!tags}
 	{option:tags}
-		<ul class="vert">
+		<div class="alignBlocks">
 			{iteration:tags}
-				<li><a href="{$var|geturlforblock:'tags':'detail'}/{$tags.url}">{$tags.name}</a></li>
+				<a class="button" href="{$var|geturlforblock:'tags':'detail'}/{$tags.url}">{$tags.name}</a>
 			{/iteration:tags}
-		</ul>
+		</div>
 	{/option:tags}
 </acritcle>

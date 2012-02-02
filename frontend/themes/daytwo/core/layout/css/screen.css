@@ -444,8 +444,8 @@ label,
 	.alignBlocks:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
 	.ie6 .alignBlocks, .ie7 .alignBlocks { zoom: 1; }
 
-		.alignBlocks p {
-			padding: 0 5px;
+		.alignBlocks p, .alignBlocks a {
+			margin: 0 5px;
 			overflow: hidden;
 			float: left;
 		}
