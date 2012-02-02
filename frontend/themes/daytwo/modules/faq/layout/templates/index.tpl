@@ -3,7 +3,7 @@
 	- {$faqCategories}: contains all categories, along with all questions inside a category
 *}
 
-
+<div class="content">
 {option:!faqCategories}
 	<p>{$msgFaqNoItems}</p>
 {/option:!faqCategories}
@@ -19,3 +19,4 @@
 		</ul>
 	{/iteration:faqCategories}
 {/option:faqCategories}
+</div>

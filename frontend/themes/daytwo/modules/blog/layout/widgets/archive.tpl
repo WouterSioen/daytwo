@@ -3,7 +3,7 @@
 	- {$widgetBlogArchive}:
 *}
 
-<div class="sidestory">
+<div class="sidestory content">
 
 	{cache:{$LANGUAGE}_blogWidgetArchiveCache}
 		{option:widgetBlogArchive}

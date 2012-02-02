@@ -104,20 +104,17 @@ h4 {
 
 a, .info {
 	text-decoration: none;
-	color: #7F7F7F;
-}
-
-a:link {
 	color: #7f7f7f;
 }
 
-a:visited {
-	color: #575757;
+a:link, a:visited {
+	color: #333;
+	border-bottom: #ccc 1px solid;
 }
 
 a:hover {
 	color: #222;
-	text-decoration: underline;
+	border-bottom: #666 1px solid;
 }
 
 a:active {
@@ -864,7 +861,7 @@ button::-moz-focus-inner{ padding: 0; border: 0 }
 	input.inputSubmit,
 	input.inputButton,
 	button {
-		padding: 4px 9px;
+		padding: 5px 9px;
 	}
 }
 
@@ -941,6 +938,7 @@ a:hover.lightButton	{
 
 .content ul {
 	list-style: none;
+	padding: padding-left: 10px;
 }
 
 .content ol {
@@ -956,7 +954,9 @@ a:hover.lightButton	{
 .content ul ol,
 .content ol ul,
 .content ol ol {
+	list-style-type: disc;
 	padding-bottom: 0;
+	padding-left: 10px;
 }
 
 .content li	{
@@ -1085,6 +1085,7 @@ a:hover.lightButton	{
 	color: #575757;
 	padding: 10px 11px;
 	margin-right: 10px;
+	border-bottom: 0;
 }
 
 .ie6 #navigation	{
@@ -1099,7 +1100,6 @@ a:hover.lightButton	{
 #navigation li.selected a, #navigation a:hover	{
 	color: #000;
 	background-color: #e5e5e5;
-	text-decoration: none;
 }
 
 #navigation a:hover	{
@@ -1202,16 +1202,12 @@ a:hover.lightButton	{
 			}
 
 			#blog .article h2 a, .content .article h3 a, #blog .article h2 a:link, .content .article h3 a:link	{
-				text-decoration: none;
+				border-bottom: none;
 				color: #000;
 			}
 
 			#blog .article h2 a:visited, .content .article h3 a:visited	{
 				color: #222;
-			}
-
-			#blog .article h2 a:hover, .content .article h3 a:hover	{
-				text-decoration: underline;
 			}
 
 			#blog .article h2	{
