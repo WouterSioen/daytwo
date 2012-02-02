@@ -842,7 +842,6 @@ a.lightButton {
 	border-radius: 5px;
 	font-size: 11px;
 	padding: 4px 9px;
-	font-weight: 700;
 	float: left;
 	background-color: #464646;
 	color: #fff;
@@ -1006,7 +1005,7 @@ a:hover.lightButton	{
 
 #mainColumn .content table	{
 	width: 420px;
-	margin-right: 58px;
+	margin: 15px 0;
 }
 
 .content td,
@@ -1321,10 +1320,6 @@ a:hover.lightButton	{
 			width: 100%;
 		}
 
-			.sidestory, .sidestory p, .sidestory .article	{
-				float: left;
-			}
-
 			.sitemap li, .sidestory li	{
 				width: 340px;
 				padding: 5px;
@@ -1339,8 +1334,7 @@ a:hover.lightButton	{
 			}
 
 			.sidestory .info	{
-				float: left;
-				margin-top: -10px;
+				position: relative;
 				padding-bottom: 10px;
 			}
 
@@ -1355,6 +1349,10 @@ a:hover.lightButton	{
 				font-size: 12px;
 				font-weight: 700;
 				padding: 0 0 8px 0;
+			}
+
+			.sidestory .article h3	{
+				margin-bottom: -12px;
 			}
 
 			.sidestory p	{

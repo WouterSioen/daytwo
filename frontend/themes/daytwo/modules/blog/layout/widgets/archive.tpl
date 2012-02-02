@@ -4,7 +4,6 @@
 *}
 
 <div class="sidestory content">
-
 	{cache:{$LANGUAGE}_blogWidgetArchiveCache}
 		{option:widgetBlogArchive}
 			<h2>{$lblArchive|ucfirst}</h2>

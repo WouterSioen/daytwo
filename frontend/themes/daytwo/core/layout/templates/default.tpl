@@ -22,7 +22,7 @@
 			<div class="sidebar">
 				{* Left position *}
 				{iteration:positionLeft}
-					{$positionLeft.blockContent}&nbsp;
+					{$positionLeft.blockContent}
 				{/iteration:positionLeft}
 			</div>
 			
