@@ -117,6 +117,7 @@ a:visited {
 
 a:hover {
 	color: #222;
+	text-decoration: underline;
 }
 
 a:active {
@@ -1016,10 +1017,6 @@ article.content h2	{
 	font-weight: 700;
 }
 
-.content a	{
-	text-decoration: underline;
-}
-
 /*
 	Page structure and layout
 */
@@ -1098,6 +1095,7 @@ article.content h2	{
 #navigation li.selected a, #navigation a:hover	{
 	color: #000;
 	background-color: #e5e5e5;
+	text-decoration: none;
 }
 
 #navigation a:hover	{
@@ -1450,6 +1448,10 @@ article.content h2	{
 		.sidestory p	{
 			font-size: 12px;
 			padding: 8px 0px;
+		}
+		
+		.subpagesBlock	{
+			margin-bottom: 10px;
 		}
 
 	/* Extra style parts */
