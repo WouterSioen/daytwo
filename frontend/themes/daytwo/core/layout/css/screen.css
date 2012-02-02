@@ -1158,10 +1158,11 @@ a:hover.lightButton	{
 		background-position: 1px 1px;
 		padding-top: 25px;
 		padding-bottom: 20px;
+		padding-left: 120px;
 		border: 1px solid #ddd;
 		float: left;
 		overflow: hidden;
-		width: 100%;
+		width: 480px;
 	}
 
 	.cutCorner p	{
@@ -1192,9 +1193,7 @@ a:hover.lightButton	{
 			/* Blog article */
 
 			#blog .article	{
-				float: left;
 				padding-top: 20px;
-				margin-left: 120px;
 				padding-bottom: 15px;
 			}
 
@@ -1239,18 +1238,20 @@ a:hover.lightButton	{
 				.tags a, .listhead, #blog	.article	.info, .info	{
 					text-transform: uppercase;
 					font-family: 'AnonymousProBold', Consolas, Courier, 'Courier New', monospace, sans-serif;
-					font-weight: 700;
 					font-size: 11px;
+				}
+				
+				.article .tags li.listhead	{
+					margin-right: 20px;
 				}
 
 				.tags	{
 					margin-top: 10px;
 					margin-left: -3px;
+					position: relative;
 				}
 
 		#blog #blogComments, #blog #blogCommentForm, #blog .ft	{
-			float: left;
-			margin-left: 120px;
 			width: 100%;
 			padding: 10px 0;
 			border-top: #ddd 1px solid;
@@ -1258,8 +1259,8 @@ a:hover.lightButton	{
 
 			.comment	{
 				width: 100%;
-				float: left;
 				padding-bottom: 10px;
+				min-height: 50px;
 			}
 
 			#blog .comment .replaceWithGravatar	{
@@ -1462,9 +1463,10 @@ a:hover.lightButton	{
 	}
 
 		.innerpage #blog .article span.square p	{
-			height: 7px;
 			background-position: 0 0;
-			margin-bottom: 0px;
+			margin-bottom: 0;
+			position: absolute;
+			top: 6px;
 		}
 
 a .commentImg p, h2 .commentImg p	{
