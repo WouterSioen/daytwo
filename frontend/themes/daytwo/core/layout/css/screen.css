@@ -114,7 +114,7 @@ a:link, a:visited {
 
 a:hover {
 	color: #222;
-	border-bottom: #666 1px solid;
+	border-color: #666;
 }
 
 a:active {
@@ -126,7 +126,7 @@ a:focus {
 }
 
 /*
-	Forms
+	Forms (slightly edited)
 	Media: screen, projection
 	Author: Yoni De Beule
 	        Johan Ronsse
@@ -908,6 +908,12 @@ a.disabledButton {
 	-moz-opacity: .50;
 }
 
+/*
+ * 
+ * End Forms part
+ * 
+ */
+
 /* Button links */
 
 
@@ -1156,9 +1162,7 @@ a:hover.lightButton	{
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfbfb', endColorstr='#f5f5f5',GradientType=0 ); /* IE6-9 */
 		background-repeat: repeat-y;
 		background-position: 1px 1px;
-		padding-top: 25px;
-		padding-bottom: 20px;
-		padding-left: 120px;
+		padding: 25px 0 20px 120px;
 		border: 1px solid #ddd;
 		float: left;
 		overflow: hidden;
@@ -1193,8 +1197,7 @@ a:hover.lightButton	{
 			/* Blog article */
 
 			#blog .article	{
-				padding-top: 20px;
-				padding-bottom: 15px;
+				padding: 20px 0 15px 0;
 			}
 
 			.ie6 #blog .article	{
@@ -1252,13 +1255,11 @@ a:hover.lightButton	{
 				}
 
 		#blog #blogComments, #blog #blogCommentForm, #blog .ft	{
-			width: 100%;
 			padding: 10px 0;
 			border-top: #ddd 1px solid;
 		}
 
 			.comment	{
-				width: 100%;
 				padding-bottom: 10px;
 				min-height: 50px;
 			}
@@ -1284,87 +1285,6 @@ a:hover.lightButton	{
 		.ie6 .articleNavigation	{
 			margin-left: 55px;
 		}
-
-		/* items in column */
-
-		.imgSlider, .sidestory	{
-			float: right;
-			padding-bottom: 10px;
-			margin-bottom: 10px;
-			border-bottom: #d5d5d5 solid 1px;
-			width: 100%;
-		}
-
-			/* Image slider */
-
-			.imgSlider img	{
-				-moz-box-shadow: 0 3px 2px #666;
-				-webkit-box-shadow: 0 3px 2px #666;
-				box-shadow: 0 3px 2px #666;
-				margin-bottom: 5px;
-			}
-
-			.imgSlider ul	{
-				position: relative;
-				float: right;
-				height: 15px;
-				width: 80px;
-			}
-
-			.imgSlider li	{
-				display: inline;
-			}
-
-			.imgSlider li a	{
-				float: left;
-				width: 13px;
-				height: 15px;
-				margin-top: -4px;
-				padding: 4px 3px;
-				text-align: center;
-				border-right: #fff 1px solid;
-				color: #7F7F7F;
-			}
-
-			.imgSlider li a.first {
-				margin-left: -9px;
-			}
-
-			.imgSlider li a.last {
-				position: absolute;
-				top: 4px;
-				right: 0px;
-				border: none;
-			}
-
-			.imgSlider span.info	{
-				text-transform: uppercase;
-				font-family: 'AnonymousProBold', Consolas, Courier, 'Courier New', monospace, sans-serif;
-				font-weight: 700;
-				font-size: 11px;
-				float: left;
-				padding-top: 7px;
-			}
-
-			.imgSlider a.active	{
-				color: #fff;
-			}
-
-			.imageOverview	{
-				margin: 0px;
-				padding: 0px;
-				float: left;
-				width: 340px;
-			}
-
-			.imageOverview li	{
-				float: left;
-				width: 112px;
-				height: 66px;
-				margin-right: 1px;
-				margin-bottom: 1px;
-				background-color: #000;
-			}
 
 		/* Main content */
 
@@ -1393,18 +1313,26 @@ a:hover.lightButton	{
 
 			/* sidestory */
 
+		.sidestory	{
+			float: right;
+			padding-bottom: 10px;
+			margin-bottom: 10px;
+			border-bottom: #d5d5d5 solid 1px;
+			width: 100%;
+		}
+
 			.sidestory, .sidestory p, .sidestory .article	{
 				float: left;
 			}
 
-.sitemap li, .sidestory li	{
-	width: 340px;
-	padding: 5px;
-}
+			.sitemap li, .sidestory li	{
+				width: 340px;
+				padding: 5px;
+			}
 
-.sidebar li	{
-	width: 210px;
-}
+			.sidebar li	{
+				width: 210px;
+			}
 
 			.sidestory	.article	{
 				padding: 5px 0px;
@@ -1429,6 +1357,11 @@ a:hover.lightButton	{
 				padding: 0 0 8px 0;
 			}
 
+			.sidestory p	{
+				font-size: 12px;
+				padding: 8px 0px;
+			}
+
 		/* sidebar */
 
 		.sidebar	{
@@ -1439,11 +1372,6 @@ a:hover.lightButton	{
 
 		.sidebar.right	{
 			float: right;
-		}
-
-		.sidestory p	{
-			font-size: 12px;
-			padding: 8px 0px;
 		}
 
 		.subpagesBlock	{
@@ -1478,15 +1406,14 @@ a .commentImg p, h2 .commentImg p	{
 		margin: -10px -5px 0 0;
 	}
 
-.info a:hover	{
-	opacity: 0.7;
-	-moz-opacity: 0.7; 
+	.info a:hover	{
+		opacity: 0.7;
+		-moz-opacity: 0.7; 
+	}
 
-}
-
-.ie6 .info a:hover, .ie7 .info a:hover, .ie8 .info a:hover	{
-	filter:alpha(opacity=70);
-}
+	.ie6 .info a:hover, .ie7 .info a:hover, .ie8 .info a:hover	{
+		filter:alpha(opacity=70);
+	}
 
 	#content a .commentImg p	{
 		margin-bottom: -4px;
@@ -1513,7 +1440,6 @@ a .commentImg p, h2 .commentImg p	{
 #footer	{
 	font-family: 'AnonymousProBold', Consolas, Courier, 'Courier New', monospace, sans-serif;
 	font-size: 11px;
-	font-weight: 700;
 	position: relative;
 	float: left;
 	padding-top: 35px;
