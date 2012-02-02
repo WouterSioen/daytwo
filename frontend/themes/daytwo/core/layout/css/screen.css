@@ -1200,10 +1200,15 @@ article.content h2	{
 				margin-left: 60px;
 			}
 
-			#blog .article h2 a	{
+			#blog .article h2 a, .content .article h3 a	{
+				text-decoration: none;
 				color: #000;
 			}
-			
+
+			#blog .article h2 a:hover, .content .article h3 a:hover	{
+				text-decoration: underline;
+			}
+
 			#blog .article h2	{
 				margin-bottom: -10px;
 			}
@@ -1405,7 +1410,7 @@ article.content h2	{
 
 			.sidestory .info	{
 				float: left;
-				margin-top: -12px;
+				margin-top: -10px;
 				padding-bottom: 10px;
 			}
 
