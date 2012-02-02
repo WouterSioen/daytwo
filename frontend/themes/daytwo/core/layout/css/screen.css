@@ -506,6 +506,7 @@ label,
 	.oneLiner p {
 		float: left;
 		padding: 0 6px 0 0;
+		margin-right: 10px;
 	}
 
 		.oneLiner label {
@@ -955,8 +956,8 @@ a:hover.lightButton	{
 .content ol ul,
 .content ol ol {
 	list-style-type: disc;
+	list-style-position: inside;
 	padding-bottom: 0;
-	padding-left: 10px;
 }
 
 .content li	{
@@ -1395,14 +1396,13 @@ a:hover.lightButton	{
 				float: left;
 			}
 
-			.sidestory li	, .sitemap li{
-				display: block;
-				width: 220px;
-				padding: 5px;
-			}
-
-.sitemap li, .innerpage .sidestory li	{
+.sitemap li, .sidestory li	{
 	width: 340px;
+	padding: 5px;
+}
+
+.sidebar li	{
+	width: 210px;
 }
 
 			.sidestory	.article	{
@@ -1491,7 +1491,7 @@ a .commentImg p, h2 .commentImg p	{
 	}
 	
 .sidestory h2 .commentImg p	{
-	margin: 0 5px -5px 0;
+	margin: 0 5px -10px 0;
 }
 
 	.info	{
