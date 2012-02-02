@@ -1467,7 +1467,7 @@ a:hover.lightButton	{
 			margin-bottom: 0px;
 		}
 
-a .commentImg p	{
+a .commentImg p, h2 .commentImg p	{
 		width: 20px;
 		height: 16px;
 		background: url(../images/comments.png) no-repeat;
@@ -1487,8 +1487,12 @@ a .commentImg p	{
 }
 
 	#content a .commentImg p	{
-		margin-bottom: -5px;
+		margin-bottom: -4px;
 	}
+	
+.sidestory h2 .commentImg p	{
+	margin: 0 5px -5px 0;
+}
 
 	.info	{
 		text-transform: uppercase;

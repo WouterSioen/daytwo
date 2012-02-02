@@ -5,7 +5,7 @@
 
 {option:widgetBlogRecentComments}
 <div class="sidestory content">
-	<h2>{$lblRecentComments|ucfirst}</h2>
+	<h2><span class="commentImg"><p></p></span>{$lblRecentComments|ucfirst}</h2>
 	<ul>
 		{iteration:widgetBlogRecentComments}
 			<li>
