@@ -1200,9 +1200,13 @@ article.content h2	{
 				margin-left: 60px;
 			}
 
-			#blog .article h2 a, .content .article h3 a	{
+			#blog .article h2 a, .content .article h3 a, #blog .article h2 a:link, .content .article h3 a:link	{
 				text-decoration: none;
 				color: #000;
+			}
+
+			#blog .article h2 a:visited, .content .article h3 a:visited	{
+				color: #222;
 			}
 
 			#blog .article h2 a:hover, .content .article h3 a:hover	{
@@ -1466,7 +1470,7 @@ article.content h2	{
 			margin-bottom: 0px;
 		}
 
-.commentImg p	{
+a .commentImg p	{
 		width: 20px;
 		height: 16px;
 		background: url(../images/comments.png) no-repeat;
@@ -1475,7 +1479,17 @@ article.content h2	{
 		margin: -10px -5px 0 0;
 	}
 
-	#content .commentImg p	{
+.info a:hover	{
+	opacity: 0.7;
+	-moz-opacity: 0.7; 
+
+}
+
+.ie6 .info a:hover, .ie7 .info a:hover, .ie8 .info a:hover	{
+	filter:alpha(opacity=70);
+}
+
+	#content a .commentImg p	{
 		margin-bottom: -5px;
 	}
 
