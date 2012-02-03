@@ -344,10 +344,10 @@ class MinifyCSS extends Minify
 			$content .= $css;
 		}
 
+		if($combineImports) $content = $this->combineImports($path, false, $content);
 		if($stripComments) $content = $this->stripComments($content);
 		if($stripWhitespace) $content = $this->stripWhitespace($content);
 		if($shortenHex) $content = $this->shortenHex($content);
-		if($combineImports) $content = $this->combineImports($path, false, $content);
 		if($importImages) $content = $this->importImages($path, false, $content);
 
 		// save to path
@@ -852,7 +852,8 @@ abstract class Minify
 	public function __construct()
 	{
 		// it's possible to add the css through the constructor as well ;)
-		if(func_num_args()) call_user_func_array(array($this, 'add'), func_get_args());
+		$arguments = func_get_args();
+		if(func_num_args()) call_user_func_array(array($this, 'add'), $arguments);
 	}
 
 	/**
