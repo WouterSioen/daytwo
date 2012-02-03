@@ -1176,6 +1176,7 @@ a:hover.lightButton	{
 	}
 	
 	.ie6 #blog, .ie7 #blog, .ie8 #blog, .ie9 #blog	{
+		background-color: #fbfbfb;
 		background-image: url(../images/lines.jpg); /* No Gradient in IE6 - 9. It kills the background-image */
 	}
 
