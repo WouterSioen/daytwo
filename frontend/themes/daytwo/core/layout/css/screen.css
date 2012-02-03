@@ -870,12 +870,20 @@ button::-moz-focus-inner{ padding: 0; border: 0 }
 .ie6 button {
 	margin-top: -1px;
 	padding: 1px 3px;
+	line-height: 16px;
 }
 
 .ie7 input.inputSubmit,
 .ie7 input.inputButton,
 .ie7 button {
 	padding: 1px 3px 0 3px;
+	line-height: 16px;
+}
+
+.ie8 input.inputSubmit,
+.ie8 input.inputButton,
+.ie8 button {
+	line-height: 12px;
 }
 
 input.inputSubmit:hover,
