@@ -1163,8 +1163,8 @@ a:hover.lightButton	{
 	}
 
 	.ie6 #blog	{
-		padding: 25px 0 20px 60px; /* padding fix IE6 */
-		width: 540px; /* wrong box model fix IE6 */
+		padding: 25px 0 20px 120px; /* padding fix IE6 */
+		width: 480px; /* wrong box model fix IE6 */
 	}
 	
 	.ie6 #blog, .ie7 #blog, .ie8 #blog, .ie9 #blog	{
@@ -1200,10 +1200,6 @@ a:hover.lightButton	{
 
 			#blog .article	{
 				padding: 20px 0 15px 0;
-			}
-
-			.ie6 #blog .article	{
-				margin-left: 60px;
 			}
 
 			#blog .article h2 a, .content .article h3 a, #blog .article h2 a:link, .content .article h3 a:link	{
