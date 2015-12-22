@@ -1,23 +1,21 @@
-# README
-
-## Install
-
-1. upload all the content into you document_root
-3. open up your browser en go to your website
-4. follow the steps on the screen
-5. have fun
+# Theme: daytwo
 
 
-## Bugs
 
-If you encounter any bugs, please post a bug report to:
-[http://bugtracker.fork-cms.com](http://bugtracker.fork-cms.com)
+## Installation
 
-If you're stuck or would like to discuss Fork CMS:
-[http://forum.fork-cms.com](http://forum.fork-cms.com)
+Visit the [Fork CMS knowledge base](http://fork-cms.com/knowledge-base) to learn how to install a theme. To download the zip-package go to the [extension page](http://www.fork-cms.com/extensions/detail/eco) of the theme on fork-cms.com.
 
-## Discussion
-- IRC: irc.freenode.org #forkcms
-- E-mail: <info@fork-cms.com> with any questions or remarks.
+## Contributing
 
-_The Fork CMS team_
+It would be great if you could help us improve the theme. GitHub does a great job in managing collaboration by providing different tools, the only thing you need is a [GitHub](https://github.com/) login.
+
+* Use **Pull requests** to add or update code
+* **Issues** for bug reporting or code discussions
+* Or regarding documentation and how-to's, check out **Wiki**
+
+More info on how to work with GitHub on [help.github.com](https://help.github.com).
+
+## License
+
+The module is licensed under MIT. In short, this license allows you to do everything as long as the copyright statement stays present.
