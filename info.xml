@@ -33,7 +33,7 @@
 		<template label="Home" path="Core/Layout/Templates/home.tpl">
 			<positions>
 				<position name="main" />
-				<position name="right"
+				<position name="right" />
 			</positions>
 			<format>
 				[main,main,right]
